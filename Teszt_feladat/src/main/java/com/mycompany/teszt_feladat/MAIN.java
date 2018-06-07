@@ -10,5 +10,7 @@ package com.mycompany.teszt_feladat;
  * @author ludanyi.tamas
  */
 public class MAIN {
-    
+    public static void main(String[] args) {
+        
+    }
 }
