@@ -11,9 +11,11 @@ package com.mycompany.teszt_feladat;
  * @author ludanyi.tamas
  */
 public class MAIN {
+    
+    
     public static void main(String[] args) {
-        Wolf v = new Robot();
-        v.getArena_size();
+       Robot r = new Robot(10, 10, "5,2", "1,3", "4,6");
+        r.getArena_size();
         
     }
 }

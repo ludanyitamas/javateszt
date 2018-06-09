@@ -12,11 +12,11 @@ package com.mycompany.teszt_feladat;
 public class Robot {
     int enemy_armor;
     int own_armor;
-    int[][] arena_size;
-    int[][] opponent_position;
-    int[][] own_position;
+    String arena_size;
+    String opponent_position;
+    String own_position;
 
-    public Robot(int enemy_armor, int own_armor, int[][] arena_size, int[][] opponent_position, int[][] own_position) {
+    public Robot(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position) {
         this.enemy_armor = enemy_armor;
         this.own_armor = own_armor;
         this.arena_size = arena_size;
@@ -36,15 +36,16 @@ public class Robot {
         return own_armor;
     }
 
-    public int[][] getArena_size() {
+    public String getArena_size() {
+        System.out.println(arena_size);
         return arena_size;
     }
 
-    public int[][] getOpponent_position() {
+    public String getOpponent_position() {
         return opponent_position;
     }
 
-    public int[][] getOwn_position() {
+    public String getOwn_position() {
         return own_position;
     }
     

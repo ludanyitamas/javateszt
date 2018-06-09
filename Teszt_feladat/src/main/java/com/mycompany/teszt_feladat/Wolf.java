@@ -10,9 +10,16 @@ package com.mycompany.teszt_feladat;
  * @author ludanyi.tamas
  */
 public class Wolf extends Robot implements Robotok{
-
-    public Wolf(int enemy_armor, int own_armor, int[][] arena_size, int[][] opponent_position, int[][] own_position) {
+    
+    private String color;
+    
+    public Wolf(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position, String color) {
         super(enemy_armor, own_armor, arena_size, opponent_position, own_position);
+                this.color = color;
+    }
+
+    public Wolf(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position) {
+        this(enemy_armor, own_armor, arena_size, opponent_position, own_position,"as");
     }
 
     @Override
