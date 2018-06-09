@@ -5,6 +5,10 @@
  */
 package com.mycompany.teszt_feladat;
 
+import com.googlecode.lanterna.TerminalFacade;
+import com.googlecode.lanterna.screen.Screen;
+import com.googlecode.lanterna.terminal.Terminal;
+
 
 /**
  *
@@ -13,7 +17,15 @@ package com.mycompany.teszt_feladat;
 public class MAIN {
     
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Screen screen = TerminalFacade.createScreen();
+        screen.startScreen();
+        screen.readInput();
+        screen.putString(5, 5, "Robot HArc", Terminal.Color.BLUE, Terminal.Color.WHITE);
+        screen.refresh();
+        Thread.sleep(3000);
+        System.exit(0);
+        
        Robot r = new Robot(10, 10, "5,2", "1,3", "4,6");
         r.getArena_size();
         
