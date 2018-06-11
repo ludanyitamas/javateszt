@@ -24,6 +24,26 @@ public class Robot {
         this.own_position = own_position;
     }
 
+    public void setEnemy_armor(int enemy_armor) {
+        this.enemy_armor = enemy_armor;
+    }
+
+    public void setOwn_armor(int own_armor) {
+        this.own_armor = own_armor;
+    }
+
+    public void setArena_size(String arena_size) {
+        this.arena_size = arena_size;
+    }
+
+    public void setOpponent_position(String opponent_position) {
+        this.opponent_position = opponent_position;
+    }
+
+    public void setOwn_position(String own_position) {
+        this.own_position = own_position;
+    }
+
  
    
    
