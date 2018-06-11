@@ -12,17 +12,26 @@ package com.mycompany.teszt_feladat;
 public class Wolf extends Robot implements Robotok{
     
     private String color;
+    public int enemy_armor;
+    public int own_armor;
+    public String opponent_position;
+    public String own_position;
     
-    public Wolf(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position, String color) {
-        super(enemy_armor, own_armor, arena_size, opponent_position, own_position);
+    public Wolf(int enemy_armor, int own_armor, String opponent_position, String own_position, String color) {
+        super(enemy_armor, own_armor, opponent_position, own_position);
                 this.color = color;
+                this.enemy_armor = enemy_armor;
+                this.own_armor = own_armor;
+                this.opponent_position = opponent_position;
+                this.own_position = own_position;
+                
     }
 
     
     
 
-    public Wolf(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position) {
-        this(enemy_armor, own_armor, arena_size, opponent_position, own_position,"as");
+    public Wolf(int enemy_armor, int own_armor, String opponent_position, String own_position) {
+        this(enemy_armor, own_armor, opponent_position, own_position,"as");
     }
 
     @Override

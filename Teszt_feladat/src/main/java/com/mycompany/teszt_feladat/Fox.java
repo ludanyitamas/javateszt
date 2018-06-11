@@ -12,13 +12,13 @@ package com.mycompany.teszt_feladat;
 public class Fox extends Robot implements Robotok{
      private String color;
     
-    public Fox(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position, String color) {
-        super(enemy_armor, own_armor, arena_size, opponent_position, own_position);
+    public Fox(int enemy_armor, int own_armor,  String opponent_position, String own_position, String color) {
+        super(enemy_armor, own_armor,  opponent_position, own_position);
                 this.color = color;
     }
 
-    public Fox(int enemy_armor, int own_armor, String arena_size, String opponent_position, String own_position) {
-        this(enemy_armor, own_armor, arena_size, opponent_position, own_position,"as");
+    public Fox(int enemy_armor, int own_armor,  String opponent_position, String own_position) {
+        this(enemy_armor, own_armor,  opponent_position, own_position,"as");
     }
 
     @Override
